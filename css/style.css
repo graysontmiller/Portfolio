@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*Set up main root elements (like colors)*/
+/* :root {
+} */
+
+body {
+  color: #262b44;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+header {
+  padding: 20px 35px;
+  background-color: beige;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* position: ; */
+  /* z-index: 9999; */
+  top: 0;
+}
+
+header h1 {
+  font-weight: bold;
+  font-size: 100px;
+  margin-top: 40px;
+  margin-left: 40px;
+}
+header a {
+  text-decoration: none;
+}
+
+header nav {
+  margin: 10px 0;
+}
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+header nav ul li a {
+  padding: 10px 30px;
+  font-weight: lighter;
+  font-size: 1.55vw;
+}
