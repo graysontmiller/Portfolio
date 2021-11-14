@@ -14,27 +14,32 @@ body {
 
 header {
   padding: 20px 35px;
-  background-color: beige;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
-  /* position: ; */
-  /* z-index: 9999; */
+  position: -webkit-sticky;
+  position: sticky;
   top: 0;
+  background-image: url("../assets/background\ placeholder.jpeg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 80%;
+  z-index: 9999;
 }
 
 header h1 {
-  font-weight: bold;
-  font-size: 100px;
-  margin-top: 40px;
-  margin-left: 40px;
+  justify-content: center;
 }
 header a {
   text-decoration: none;
+  color: #262b44;
 }
 
 header nav {
   margin: 10px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 header nav ul {
@@ -45,8 +50,171 @@ header nav ul {
   list-style: none;
 }
 
+
 header nav ul li a {
   padding: 10px 30px;
   font-weight: lighter;
   font-size: 1.55vw;
 }
+
+/*FOOTER SECTION*/
+footer {
+  background: #262b44;
+  width: 100%;
+  padding: 40px 35px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+footer h2 {
+  color: white;
+  font-size: 30px;
+  margin: 0;
+}
+
+footer div {
+  line-height: 1.5;
+  text-align: right;
+  color: white;
+}
+
+
+/*END FOOTER*/
+
+/*HERO SECTION*/
+
+.hero {
+  background-image: url("../assets/background\ placeholder.jpeg");
+  background-size: cover;
+  padding: 60px;
+  position: relative;
+  background-attachment: fixed;
+  background-position: 80%;
+  
+}
+.about {
+  display: flex;
+  position: relative;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  margin: 3.5%;
+  color: #262b44;
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.about-img img{
+  border-radius: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  width: 25vw;
+}
+
+.about h2 {
+  font-style: bold;
+  font-size: 82px;
+  color: #262b44;
+  line-height: 1;
+}
+
+.about p {
+  padding-top: 30px;
+}
+
+/*My Work*/
+
+/* .work-grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.work-grid h2 {
+  display: flex;
+  
+}
+
+.work-link {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+margin: 20px 20px;
+  flex: 1;
+}
+
+.work-link img{
+  width: 100%;
+} */
+
+.trainer {
+  margin: 20px;
+  background: #262b44;
+  color: #262b44;
+ 
+  flex: 1;
+}
+
+.trainers {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.trainer img {
+  width: 100%;
+  height: 100%;
+}
+
+.trainer-bio {
+  padding: 25px;
+
+  line-height: 1.3;
+}
+
+.trainer-bio h3 {
+  font-size: 28px;
+}
+
+.trainer-bio h4 {
+  font-weight: lighter;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.trainer-bio p {
+  font-size: 17px;
+}
+
+.flex-row {
+  display: flex;
+}
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+
+@media screen and (max-width: 980px) {
+  header {
+    padding-bottom: 0;
+    justify-content: center;
+    position: relative;
+  }
+
+  header h1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  header nav ul {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  header nav ul li a {
+    font-size: 20px;
+  }
