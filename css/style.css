@@ -4,11 +4,14 @@
   box-sizing: border-box;
 }
 /*Set up main root elements (like colors)*/
-/* :root {
-} */
+:root {
+  --primary-color: #262b44;
+  --secondary-color: #7a6885;
+  --tertiary-color: #f67c3a;
+}
 
 body {
-  color: #262b44;
+  color: var(--primary-color);
   font-family: Helvetica, Arial, sans-serif;
 }
 
@@ -20,7 +23,7 @@ header {
   /* position: -webkit-sticky;
   position: sticky; */
   top: 0;
-  background-image: url("../assets/background\ placeholder.jpeg");
+  background-image: url("../assets/background\ placeholder.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-position: 80%;
@@ -37,7 +40,7 @@ header img {
 
 header a {
   text-decoration: none;
-  color: #262b44;
+  color: var(--primary-color);
 }
 
 header nav {
@@ -64,33 +67,25 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-  background: #262b44;
+  background: var(--primary-color);
   color: white;
   border-radius: 15px;
 }
 
 /*FOOTER SECTION*/
 footer {
-  background-image: url("../assets/background\ placeholder.jpeg");
-  background-attachment: fixed;
-  background-size: cover;
+  background-color: var(--secondary-color);
   width: 100%;
   padding: 20px 15px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
 footer h2 {
-  color: #262b44;
+  color: white;
   font-size: 16px;
   margin: 0;
-}
-
-footer div {
-  line-height: 1.5;
-  text-align: right;
-  color: #262b44;
 }
 
 /*END FOOTER*/
@@ -98,7 +93,7 @@ footer div {
 /*HERO SECTION*/
 
 .hero {
-  background-image: url("../assets/background\ placeholder.jpeg");
+  background-image: url("../assets/background\ placeholder.jpg");
   background-size: cover;
   padding: 60px;
   position: relative;
@@ -113,7 +108,7 @@ footer div {
   align-items: center;
   text-align: center;
   margin: 3.5%;
-  color: #262b44;
+  color: var(--primary-color);
   font-size: 18px;
   line-height: 1.2;
 }
@@ -127,7 +122,7 @@ footer div {
 .about h2 {
   font-style: bold;
   font-size: 82px;
-  color: #262b44;
+  color: var(--primary-color);
   line-height: 1;
 }
 
@@ -153,7 +148,7 @@ footer div {
 }
 
 .work-section {
-  background: #262b44;
+  background: var(--primary-color);
   padding-bottom: 60px;
 }
 
@@ -213,6 +208,79 @@ footer div {
 .flex-row {
   display: flex;
 }
+/*END WORK SECTION*/
+
+/*CONTACT SECTION*/
+.contact-section {
+  background-image: linear-gradient(
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  display: flex;
+  justify-content: center;
+}
+
+.contact-cta {
+  width: 35%;
+  text-align: right;
+  margin: 3.5%;
+  font-weight: lighter;
+  color: white;
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.contact-cta h2 {
+  font-style: italic;
+  font-size: 70px;
+  color: white;
+}
+
+.contact-form {
+  border: solid 3px #7a6885;
+  background-color: rgba(246, 124, 58, 0.25);
+  padding: 20px;
+  width: 40%;
+  margin: 3.5%;
+  color: white;
+  border-radius: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  border: 1px solid var(--secondary-color);
+  display: block;
+  padding: 7px 15px;
+  font-size: 16px;
+  color: var(--primary-color);
+  width: 100%;
+  margin-bottom: 15px;
+  margin-top: 5px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.contact-form button {
+  width: 100%;
+  border: none;
+  background: rgba(255, 255, 255, 0.75);
+  color: var(--primary-color);
+  text-align: center;
+  padding: 15px 0;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+.contact-form button:hover {
+  color: var(--primary-color);
+  background: rgba(255, 255, 255, 1);
+}
+/*END CONTACT SECTION*/
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 
@@ -270,7 +338,7 @@ footer div {
     font-size: 5vw;
     flex-wrap: wrap;
     display: flex;
-    border-bottom: 1px solid #262b44;
+    border-bottom: 1px solid var(--primary-color);
   }
 
   .hero {
@@ -281,7 +349,7 @@ footer div {
   }
 
   .hero-mobile {
-    background-image: url("../assets/background\ placeholder.jpeg");
+    background-image: url("../assets/background\ placeholder.jpg");
     background-size: cover;
     padding: 60px;
     position: relative;
@@ -297,7 +365,7 @@ footer div {
     align-items: center;
     text-align: center;
     margin: 3.5%;
-    color: #262b44;
+    color: var(--primary-color);
     font-size: 18px;
     line-height: 1.2;
     width: 100%;
@@ -314,17 +382,36 @@ footer div {
   .about-mobile h2 {
     font-style: bold;
     font-size: 82px;
-    color: #262b44;
+    color: var(--primary-color);
     line-height: 1;
   }
 
   .about-mobile p {
     padding-top: 30px;
-    font-size: 30px;
+    font-size: 40px;
   }
 
   section {
     padding: 30px 15px;
+  }
+
+  .contact-section {
+    flex-wrap: wrap;
+  }
+
+  .contact-cta,
+  .contact-form {
+    width: 100%;
+  }
+
+  .contact-cta {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .contact-cta h2 {
+    font-size: 50px;
+    text-align: center;
   }
 }
 /* END MEDIA QUERY FOR TABLET SCREENS*/
@@ -354,11 +441,11 @@ footer div {
 
   nav ul li {
     text-align: center;
-    border-bottom: 1px solid #262b44;
+    border-bottom: 1px solid var(--primary-color);
   }
 
   nav ul li a {
-    color: #262b44;
+    color: var(--primary-color);
   }
 
   /* end nav/header */
@@ -383,6 +470,7 @@ footer div {
 
   .about-mobile p {
     padding: 15px;
+    font-size: 24px;
   }
 
   /*END ABOUT SECTION*/
