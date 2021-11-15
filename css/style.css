@@ -509,30 +509,28 @@ footer h2 {
     width: 95%;
   }
 
+  .work-callout {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .work-title-callout {
+    font-size: 26px;
+  }
+
   .work-grid {
     justify-content: center;
   }
   .work-link {
-    width: 100%;
+    width: 80vw;
+  }
+
+  .work-link img {
+    width: 80vw;
   }
 
   .img-container {
-    flex: 1 1 100%;
-  }
-
-  .work-grid {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    padding: 10px;
-  }
-
-  .work-link {
-    background-color: none;
-  }
-
-  .work-grid > * {
-    flex: 1 0 100%;
+    width: 80vw;
   }
 }
 /* END MEDIA QUERY FOR MOBILE PHONE SCREENS*/
