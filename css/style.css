@@ -152,6 +152,32 @@ footer h2 {
   padding-bottom: 60px;
 }
 
+.work-callout {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 70px;
+  margin-right: 70px;
+  margin-bottom: 50px;
+  justify-content: center;
+  align-items: center;
+}
+.work-callout-img {
+  display: block;
+  width: 100%;
+}
+
+.work-callout:hover .work-callout-img img {
+  opacity: 50%;
+}
+
+.work-title-callout {
+  display: flex;
+  font-size: 36px;
+  padding-bottom: 25px;
+  color: white;
+  padding-top: 50px;
+}
+
 .work-grid {
   display: flex;
   flex-wrap: wrap;
@@ -205,8 +231,10 @@ footer h2 {
   visibility: visible;
 }
 
-.flex-row {
-  display: flex;
+.work-title {
+  color: white;
+  text-align: center;
+  background-color: none;
 }
 /*END WORK SECTION*/
 
