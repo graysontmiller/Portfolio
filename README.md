@@ -15,5 +15,3 @@ This portfolio was made for the UNCC Coding Bootcamp Challenge #2. I plan on rev
 2. A section cataloguing specific projects that I want to share.
 3. A contact section with my email address.
 
-
-this is a test 
